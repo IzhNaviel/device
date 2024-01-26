@@ -1,12 +1,12 @@
 @font-face {
-  font-family: "Rubic", sans-serif;
+  font-family: "Rubik", sans-serif;
   src: url('../fonts/rubik/rubik-400.woff2') format('.woff2');
   font-weight: 400;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Rubic", sans-serif;
+  font-family: "Rubik", sans-serif;
   src: url('../fonts/rubik/rubik-400.woff2') format('.woff2');
   font-weight: 700;
   font-display: swap;
@@ -37,7 +37,7 @@
 }
 
 body {
-  font-family: 'Rubic', sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
@@ -46,8 +46,8 @@ body {
 }
 
 a {
-  text-decoration: underline;
-  font-family: "Rubic", sans-serif;
+  text-decoration: none;
+  font-family: "Rubik", sans-serif;
   color: var(--black);
   font-size: 18px;
   font-weight: 400;
@@ -65,49 +65,330 @@ h1 {
 }
 
 h2 {
-  font-size: 18px;
-  line-height: 21px;
-  letter-spacing: 20%;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
 }
 
 h3 {
-  font-family: 'Rubic', sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
 }
 
 li {
-  font-family: "Rubic",sans-serif;
+  font-family: "Rubik",sans-serif;
 }
 
 .btn {
-  font-family: "Rubic",sans-serif;
+  border: none;
+  font-family: "Rubik",sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
-  letter-spacing: 20%;
+  letter-spacing: 3.6px;
   text-align: center;
 }
 
 /* HEADER */
 
+.navigation-list {
+  list-style: none;
+}
+
+.page-link {
+  font-family: "Raleway",sans-serif;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+}
+
 /* MAIN */
 
 /* SLIDER */
+.slider-top {
+  background-color: var(--yellow);
+}
+
+.slider-number {
+  text-align: right;
+  font-size: 180px;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.button-prev {
+  width: 20px;
+  height: 60px;
+  background-image: url(../img/left-tall-arrow.svg);
+}
+
+.button-next {
+  width: 20px;
+  height: 60px;
+  background-image: url(../img/right-tall-arrow.svg);
+}
+
+.features-list {
+  list-style: none;
+}
+
+.features-item-title {
+  font-size: 36px;
+}
+
+.features-item-description {
+  font-size: 16px;
+  color: var(--dark);
+}
+/* CATALOG CATEGORIES */
+
+.catalog-list {
+  list-style: none;
+}
+
+.section-description {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  line-height: 24px;
+  letter-spacing: -.4px;
+}
 
 /* FEATURES */
 
 /* OPTION */
 
+.option {
+  background-color: var(--light);
+}
+
+.option-description {
+  color: var(--dark);
+}
+
 /* DELIVERY FORM */
 
+.delivery-form {
+  background-color: var(--light);
+}
+
+.delivery-form-title {
+  font-family: "Raleway" ,sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.delivery-form-btn {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 100%;
+  background: var(--grey) url(../img/i.svg) no-repeat center;
+}
+
 /* ABOUT */
+.delivery-item {
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -.4px;
+}
+
+.contacts-subtitle {
+  color: var(--dark);
+}
+
+.phone {
+  text-decoration: underline;
+}
 
 /* RSS */
+.rss {
+  background-color: var(--light);
+}
+
+.rss-description {
+  color: var(--dark);
+}
+
+.rss-buttun {
+  font-family: "Raleway", sans-serif;
+}
+
+.rss-icon {
+  color: var(--dark);
+}
 
 /* FOOTER */
 
+.page-footer {
+  background-color: var(--dark);
+}
+
+.page-footer .page-link {
+  color: var(--white);
+}
+
+.page-footer .phone {
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--white);
+}
+
+.footer-adress {
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--white);
+}
+
 .social-img {
   margin: 0 auto;
+}
+
+/* INNER PAGE */
+
+/* MAIN */
+
+/* BREADCRUMBS */
+
+.breadcrumbs-list {
+  list-style: none;
+}
+
+.breadcrumbs-item {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.breadcrumbs-item .breadcrumbs-link{
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.breadcrumbs-icon {
+  width: 4px;
+  height: 7px;
+  background-image: url(../img/nav-arrow.svg);
+}
+
+/* CATALOG */
+
+.catalog-products {
+  background-color: var(--light);
+}
+
+/* FILTER */
+
+.filter-title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 3.2px;;
+  text-transform: uppercase;
+}
+
+.catalog-filter-title {
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -.4px;
+}
+
+.catalog-filter-label {
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  color: var(--grey);
+}
+
+.catalog-filter-label:focus {
+  border: 1px solid var(--purple);
+}
+
+.control-label {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+/* SORTING */
+
+.sorting-title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 3.2px;;
+  text-transform: uppercase;
+}
+
+.select-control {
+  background-color: var(--light);
+  border: none;
+}
+
+.sorting-option {
+  font-family: 'Rubik', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;  
+}
+
+/* PRODUCTS */
+.product-section {
+  background-color: var(--white);
+}
+
+.product-list {
+  list-style: none;
+}
+
+.product-card-title {
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: -.4px;
+}
+
+.product-card-price {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: right;
+  color: var(--dark);
+}
+
+.pagination-show-more {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
+  background-color: var(--white);
+  border: 3px solid #E5E5E5;
+  padding: 18px 295px;
+}
+
+.pagination {
+  list-style: none;
+  background-color: var(--light);
+}
+
+.pagination-prev, .pagination-next {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  line-height: 21px;
+  letter-spacing: 3.2px;
+}
+
+.pagination-link {
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--dark);
 }
