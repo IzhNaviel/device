@@ -36,7 +36,14 @@
   --success: #08AF00;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: 'Rubik', sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -107,6 +114,10 @@ li {
 }
 
 /* MAIN */
+
+.main-container {
+  flex-grow: 1;
+}
 
 /* SLIDER */
 .slider-top {
