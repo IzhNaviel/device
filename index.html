@@ -11,38 +11,44 @@
       <div class="header-container">
         <img class="header-logo" src="img/logo-header.svg" alt="Сайт магазина Device" width="145px" height="36px">
         <nav class="navigation">
-          <ul class="navigation-list">
-            <li class="navigation-item">
-              <input type="search" name="header-search" id="header-search" placeholder="Текст поиска">
-            </li>
-            <li class="navigation-item">
-              <a href="#">Найти</a>
-            </li>
-            <li class="navigation-item">
-              <img src="img/user.svg" alt="Пользователь" width="13px" height="12px"><a href="#" class="navigation-link">Войти</a>
-            </li>
-            <li class="navigation-itsem navigation-right">
-              <img src="img/sort.svg" alt="Пользователь" width="10px" height="12px"><a href="#" class="navigation-link">Сравнить</a>
-            </li>
-            <li class="navigation-item">
-              <img src="img/basket.svg" alt="Корзина" width="16px" height="14px"><a href="#" class="navigation-link">Корзина</a>
-            </li>
-          </ul>
-          <ul class="navigation-list navigation-pages">
-            <li class="navigation-item navigation-catalog">
-            <a href="catalog.html" class="page-link">Каталог товаров</a> <span class="catalog-icon plus"></span>
-            </li>
-            <li class="navigation-item navigation-right">
-              <a href="#" class="page-link">Доставка</a>
-            </li>
-            <li class="navigation-item">
-              <a href="#" class="page-link">Гарантия</a>
-            </li>
-            <li class="navigation-item">
-              <a href="#" class="page-link">Контакты</a>
-              <br>
-            </li>
-          </ul>
+          <div class="navigation-wrapper">
+            <ul class="navigation-list">
+              <li class="navigation-item">
+                <input type="search" name="header-search" id="header-search" placeholder="Текст поиска">
+              </li>
+              <li class="navigation-item">
+                <a href="#">Найти</a>
+              </li>
+              <li class="navigation-item">
+                <img src="img/user.svg" alt="Пользователь" width="13px" height="12px"><a href="#" class="navigation-link">Войти</a>
+              </li>
+            </ul>
+            <ul class="navigation-list">
+              <li class="navigation-item">
+                <img src="img/sort.svg" alt="Пользователь" width="10px" height="12px"><a href="#" class="navigation-link">Сравнить</a>
+              </li>
+              <li class="navigation-item">
+                <img src="img/basket.svg" alt="Корзина" width="16px" height="14px"><a href="#" class="navigation-link">Корзина</a>
+              </li>
+            </ul>
+          </div>
+          <div class="navigation-wrapper">
+            <div class="navigation-item navigation-catalog">
+              <a href="catalog.html" class="page-link">Каталог товаров</a> <span class="catalog-icon plus"></span>
+            </div>
+            <ul class="navigation-list navigation-pages">
+              <li class="navigation-item">
+                <a href="#" class="page-link">Доставка</a>
+              </li>
+              <li class="navigation-item">
+                <a href="#" class="page-link">Гарантия</a>
+              </li>
+              <li class="navigation-item">
+                <a href="#" class="page-link">Контакты</a>
+                <br>
+              </li>
+            </ul>
+          </div>
         </nav>
       </div>
     </header>
@@ -50,7 +56,7 @@
         <h1 class="visually-hidden">Магазин Device</h1>
       <div class="page-container">
         <section class="slider">
-            <p class="slider-number">01</p>
+            <div class="slider-number">01</div>
             <div class="slider-container">
               <div class="slider-image-wrapper">
                 <button type="button" class="slider-button button-prev">
@@ -64,7 +70,26 @@
               <div class="slider-text">
                 <h2 class="slider-title">Порхает как бабочка,жалит как пчела!</h2>
                 <p class="slider-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-                <button type="button" class="btn">Подробнее</button>
+                <div class="detailed-wrapper">
+                  <button type="button" class="btn">Подробнее</button>
+                  <ol class="slider-pagination-list">
+                    <li class="slider-pagination-item">
+                      <button class="slider-pagination-button" type="button">
+                        <span class="">1 слайд</span>
+                      </button>
+                    </li>
+                    <li class="slider-pagination-item">
+                      <button class="slider-pagination-button" type="button">
+                        <span class="">2 слайд</span>
+                      </button>
+                    </li>
+                    <li class="slider-pagination-item">
+                      <button class="slider-pagination-button" type="button">
+                        <span class="">3 слайд</span>
+                      </button>
+                    </li>
+                  </ol>
+                </div>
                 <ul class="features-list">
                   <li class="features-item">
                     <p class="features-item-title">800 м</p>
@@ -76,23 +101,6 @@
                   </li>
                 </ul>
               </div>
-              <ol class="slider-pagination-list">
-                <li class="slider-pagination-item">
-                  <button class="slider-pagination-button" type="button">
-                    <span class="visually-hidden">1 слайд</span>
-                  </button>
-                </li>
-                <li class="slider-pagination-item">
-                  <button class="slider-pagination-button" type="button">
-                    <span class="visually-hidden">2 слайд</span>
-                  </button>
-                </li>
-                <li class="slider-pagination-item">
-                  <button class="slider-pagination-button" type="button">
-                    <span class="visually-hidden">3 слайд</span>
-                  </button>
-                </li>
-              </ol>
         </section>
       </div>
       <div class="page-container">
