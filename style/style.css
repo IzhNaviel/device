@@ -34,6 +34,8 @@
   --error: #FF3D3D;
   --warning: #FD912E;
   --success: #08AF00;
+
+  -moz-animation: 12;
 }
 
 * {
