@@ -501,13 +501,20 @@ li {
 
 .catalog-products {
   background-color: var(--light);
+}
+
+.catalog-wrapper {
   display: flex;
 }
 
 /* FILTER */
 
+.filter {
+  padding: 25px 60px;
+}
+
 .filter-form {
-  width: 320px;
+  max-width: 320px;
 }
 
 .filter-title {
@@ -517,6 +524,12 @@ li {
   line-height: 19px;
   letter-spacing: 3.2px;;
   text-transform: uppercase;
+  margin-bottom: 35px;
+}
+
+.catalog-filter-group {
+  margin: 0;
+  padding: 0;
 }
 
 .catalog-filter-title {
@@ -559,7 +572,8 @@ li {
 .sorting-type {
   display: flex;
   flex-direction: row;
-  width: 840px;
+  justify-content: space-between;
+  align-items: center;
   margin: 20px 40px;
 }
 
@@ -587,14 +601,15 @@ li {
 /* PRODUCTS */
 .product-section {
   background-color: var(--white);
+  padding: 70px 40px;
 }
 
 .product-list {
   list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
-  margin: 70px 40px;
+  display: grid;
+  grid-template-columns: repeat(2, 360px);
+  gap: 40px 44px;
+  margin-bottom: 40px;
 }
 
 .product-card-title {
@@ -613,6 +628,7 @@ li {
 }
 
 .pagination-show-more {
+  width: 100%;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 16px;
@@ -621,12 +637,28 @@ li {
   text-transform: uppercase;
   background-color: var(--white);
   border: 3px solid #E5E5E5;
-  padding: 18px 295px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  margin-bottom: 44px;
 }
 
 .pagination {
   list-style: none;
   background-color: var(--light);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pagination-list {
+  list-style: none;
+  display: flex;
+}
+
+.pagination-item {
+  width: 40px;
+  height: 40px;
+  display: flex;
 }
 
 .pagination-prev, .pagination-next {
@@ -634,12 +666,14 @@ li {
   font-weight: 800;
   line-height: 21px;
   letter-spacing: 3.2px;
+  padding: 25px 25px;
 }
 
 .pagination-link {
+  padding: 10px 10px;
   font-size: 16px;
   line-height: 20px;
-  color: var(--dark);
+  color: rgba(68, 68, 68, 1);
 }
 
 /* FOOTER */
@@ -692,6 +726,7 @@ li {
   list-style: none;
   display: flex;
   gap: 15px;
+  padding: 13px 13px;
 }
 
 .social-item {
