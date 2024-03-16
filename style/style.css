@@ -1066,6 +1066,79 @@ li {
   padding-top: 12px;
 }
 
+.control {
+  position: relative;
+  display: block;
+  padding-left: 36px;
+}
+
+.control:hover {
+  opacity: .6;
+}
+
+.control-input:focus-visible ~ .control-mark {
+  outline: 2px solid var(--purple);
+  outline-offset:2px
+}
+
+.control:active {
+  opacity: .3;
+}
+
+.control:disabled {
+  opacity: .1;
+}
+
+.control-mark {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 2px;
+  border: 2px solid var(--black);
+  cursor: pointer;
+}
+
+.control-input[type="radio"] ~ .control-mark {
+  border-radius: 50%;
+}
+
+.control:hover .control-mark {
+  opacity: .6;
+}
+
+.control:active .control-mark {
+  opacity: .3;
+}
+
+.control:disabled .control-mark {
+  opacity: .1;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark {
+  background-image: url(../img/tick.svg);
+  background-size: 10px 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.control-input[type="radio"]:checked ~ .control-mark {
+  background: none;
+}
+
+.control-input[type="radio"]:checked ~ .control-mark::before {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  width: 8px;
+  height: 8px;
+  background-color: #242424;
+  border-radius: 50%;
+  content: "";
+}
+
+
 .control-label {
   font-size: 16px;
   line-height: 19px;
